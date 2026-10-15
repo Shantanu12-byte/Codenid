@@ -1,0 +1,78 @@
+{
+  "expo": {
+    "name": "codenid",
+    "slug": "codenid",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/codenid_logo.png",
+    "scheme": "codenid",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#121212",
+    "splash": {
+      "image": "./assets/codenid_logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#121212"
+    },
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.shant.codenid",
+      "versionCode": 1,
+      "jsEngine": "hermes",
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ],
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "backgroundColor": "#000000",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/codenid_logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/codenid_logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#121212",
+          "dark": {
+            "image": "./assets/codenid_logo.png",
+            "backgroundColor": "#121212"
+          }
+        }
+      ],
+      "react-native-app-auth",
+      "expo-audio",
+      "expo-video"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "1ccacb21-c1dd-439b-b695-230a4ebc6474"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/1ccacb21-c1dd-439b-b695-230a4ebc6474"
+    }
+  }
+}
